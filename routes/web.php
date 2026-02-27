@@ -206,4 +206,4 @@ Route::post('/v/{slug}/comment', function(Request $request, $slug) {
 Route::view('/kebijakan-privasi', 'pages.policy')->name('policy');
 Route::view('/faq', 'pages.faq')->name('faq');
 Route::get('/register/pending/{user}', fn(User $user) => view('auth.pending', compact('user')))->name('register.pending');
-Route::delete('/dashboard/gallery/destroy/{id}', [UserDashboardController::class, 'destroyPhoto'])->name('user.gallery.destroy');
+//Route::delete('/dashboard/gallery/destroy/{id}', [UserDashboardController::class, 'destroyPhoto'])->name('user.gallery.destroy');
